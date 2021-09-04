@@ -1,0 +1,10 @@
+<div>
+    <input id="newUser" [(ngModel)]="newUser"><br/><br/>
+    <button id="addUserBtn" (click)="addUser()">Add User</button><br/>
+
+    <div>
+      <ul class="userList">
+        <li *ngFor="let user of getUsers()"> {{ user }} </li>
+      </ul>
+    </div>
+</div>
